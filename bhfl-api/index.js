@@ -14,6 +14,9 @@ app.get("/", (req, res) => {
 });
 
 app.post("/bhfl", handler);
+app.get("/bfhl", (req, res) => {
+  res.send("This route only supports POST requests. Please use POST /bfhl.");
+});
 
 const PORT = 3000;
 app.listen(PORT, () => {
