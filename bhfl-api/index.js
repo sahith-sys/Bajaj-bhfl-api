@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 
 app.get("/", (req, res) => {
-  res.json({ message: "Hello from API, BFHL API is running!" });
+  res.json({ message: "BFHL API is running!, Use POST /bfhl" });
 });
 
 app.post("/bhfl", handler);
